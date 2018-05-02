@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Extent Report DirectoryC:\Users\apoor\IdeaProjects\SeleniumHybridFrameworkTeam6\Bestbuy\test-output\html]]>
+    </line>
+  </reporter-output>
+  <suite name="Bestbuy Automation Script " duration-ms="37481" started-at="2018-05-02T22:25:08Z" finished-at="2018-05-02T22:25:46Z">
+    <groups>
+    </groups>
+    <test name="Bestbuy" duration-ms="37481" started-at="2018-05-02T22:25:08Z" finished-at="2018-05-02T22:25:46Z">
+      <class name="testBestbuy.TestCreateAccount">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a]" name="extentSetup" is-config="true" duration-ms="732" started-at="2018-05-02T22:25:08Z" finished-at="2018-05-02T22:25:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7859e786]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report DirectoryC:\Users\apoor\IdeaProjects\SeleniumHybridFrameworkTeam6\Bestbuy\test-output\html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a]" name="before" is-config="true" duration-ms="7366" started-at="2018-05-02T22:25:08Z" finished-at="2018-05-02T22:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a]" name="startExtent" is-config="true" duration-ms="6" started-at="2018-05-02T22:25:16Z" finished-at="2018-05-02T22:25:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testBestbuy.TestCreateAccount.account() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="account()[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a]" name="account" duration-ms="26008" started-at="2018-05-02T22:25:16Z" finished-at="2018-05-02T22:25:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- account -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a]" name="afterEachTestMethod" is-config="true" duration-ms="4072" started-at="2018-05-02T22:25:42Z" finished-at="2018-05-02T22:25:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=account status=SUCCESS method=TestCreateAccount.account()[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:testBestbuy.TestCreateAccount@6e0e048a]" name="generateReport" is-config="true" duration-ms="155" started-at="2018-05-02T22:25:46Z" finished-at="2018-05-02T22:25:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- testBestbuy.TestCreateAccount -->
+    </test> <!-- Bestbuy -->
+  </suite> <!-- Bestbuy Automation Script  -->
+</testng-results>
