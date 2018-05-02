@@ -129,9 +129,9 @@ public class CommonAPI {
         wGeckoDriver = new FirefoxDriver();
 //
 //        //mac Chrome
-//        System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/chromedriver");
-//        wGeckoDriver = new FirefoxDriver();
-//
+//        System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
+//        cromeDriver= new ChromeDriver();
+
 //        // mac Gecko
 //        System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
 //        wGeckoDriver = new FirefoxDriver();
