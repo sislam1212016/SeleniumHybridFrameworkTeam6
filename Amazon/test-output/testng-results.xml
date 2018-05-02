@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="8984" started-at="2018-05-02T14:22:26Z" finished-at="2018-05-02T14:22:35Z">
+    <groups>
+    </groups>
+    <test name="SeleniumHybridFramework" duration-ms="8984" started-at="2018-05-02T14:22:26Z" finished-at="2018-05-02T14:22:35Z">
+      <class name="testAmazon.BrowseAmazon">
+        <test-method status="PASS" signature="before()[pri:0, instance:testAmazon.BrowseAmazon@2b2948e2]" name="before" is-config="true" duration-ms="3776" started-at="2018-05-02T14:22:26Z" finished-at="2018-05-02T14:22:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="browseAmazon()[pri:0, instance:testAmazon.BrowseAmazon@2b2948e2]" name="browseAmazon" duration-ms="5176" started-at="2018-05-02T14:22:30Z" finished-at="2018-05-02T14:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseAmazon -->
+      </class> <!-- testAmazon.BrowseAmazon -->
+    </test> <!-- SeleniumHybridFramework -->
+  </suite> <!-- Default Suite -->
+</testng-results>

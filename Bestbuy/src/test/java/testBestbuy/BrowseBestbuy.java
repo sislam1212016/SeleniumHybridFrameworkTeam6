@@ -8,5 +8,6 @@ public class BrowseBestbuy extends BrowseToBestbuy {
     @Test
     public void browseBestbuy(){
         browseToBestbuy();
+
     }
 }
