@@ -13,7 +13,7 @@ public class CreateAccount extends CommonAPI {
 
     static WebDriverWait wait = new WebDriverWait(wGeckoDriver, 10, 500);
     public static void createAccount() {
-
+//Reading data from Excel sheet
         Xls_Reader reader = new Xls_Reader("C:\\Users\\apoor\\IdeaProjects\\SeleniumHybridFrameworkTeam6\\Bestbuy\\src\\main\\java\\TestData\\bestbuy.xlsx");
 
         String firstName = reader.getCellData("Sheet1", "First Name", 2);
@@ -26,34 +26,30 @@ public class CreateAccount extends CommonAPI {
         System.out.println(email);
 
         String password = reader.getCellData("Sheet1", "Password", 2);
-        System.out.println(firstName);
+        System.out.println(password);
 
         String confirmPass = reader.getCellData("Sheet1", "Confirm Password", 2);
         System.out.println(confirmPass);
 
         String phone = reader.getCellData("Sheet1", "Phone Number", 2);
         System.out.println(phone);
-
+//Enter Data to WebPage
         WebElement createAccount = null;
-        wGeckoDriver.findElement(By.cssSelector("#fld-firstName")).sendKeys("team");
+        wGeckoDriver.findElement(By.cssSelector("#fld-firstName")).sendKeys(firstName);
         HomePage.sleep();
 
-        wGeckoDriver.findElement(By.cssSelector("#fld-lastName")).sendKeys("selenium6");
+        wGeckoDriver.findElement(By.cssSelector("#fld-lastName")).sendKeys(lastName);
         HomePage.sleep();
-        wGeckoDriver.findElement(By.cssSelector("#fld-e")).sendKeys("team6.selenium@gmail.com");
+        wGeckoDriver.findElement(By.cssSelector("#fld-e")).sendKeys(email);
         HomePage.sleep();
-        wGeckoDriver.findElement(By.cssSelector("#fld-p1")).sendKeys("TEam@612345");
+        wGeckoDriver.findElement(By.cssSelector("#fld-p1")).sendKeys(password);
         HomePage.sleep();
-        wGeckoDriver.findElement(By.cssSelector("#fld-p2")).sendKeys("TEam@612345");
+        wGeckoDriver.findElement(By.cssSelector("#fld-p2")).sendKeys(confirmPass);
         HomePage.sleep();
-        wGeckoDriver.findElement(By.cssSelector("#fld-phone")).sendKeys("123456789");
+        wGeckoDriver.findElement(By.cssSelector("#fld-phone")).sendKeys(phone);
         HomePage.sleep();
         createAccount = wGeckoDriver.findElement(By.cssSelector(".cia-form__submit-button"));
         wait.until(ExpectedConditions.visibilityOf(createAccount)); //this will wait for elememt to be visible for 20 seconds
        // createAccount.click();
-
-
     }
-
-
 }

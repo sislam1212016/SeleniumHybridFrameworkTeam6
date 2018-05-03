@@ -106,7 +106,7 @@ public class Xls_Reader {
                             cal.get(Calendar.MONTH)+1 + "/" +
                             cellText;
 
-                    //System.out.println(cellText);
+                    System.out.println(cellText);
 
                 }
 
@@ -164,7 +164,7 @@ public class Xls_Reader {
                             cal.get(Calendar.DAY_OF_MONTH) + "/" +
                             cellText;
 
-                    // System.out.println(cellText);
+                    System.out.println(cellText);
 
                 }
 
@@ -221,9 +221,9 @@ public class Xls_Reader {
                 cell = row.createCell(colNum);
 
             // cell style
-            //CellStyle cs = workbook.createCellStyle();
-            //cs.setWrapText(true);
-            //cell.setCellStyle(cs);
+            CellStyle cs = workbook.createCellStyle();
+            cs.setWrapText(true);
+            cell.setCellStyle(cs);
             cell.setCellValue(data);
 
             fileOut = new FileOutputStream(path);
@@ -256,10 +256,10 @@ public class Xls_Reader {
 
 
             sheet = workbook.getSheetAt(index);
-            //System.out.println("A");
+            System.out.println("A");
             row=sheet.getRow(0);
             for(int i=0;i<row.getLastCellNum();i++){
-                //System.out.println(row.getCell(i).getStringCellValue().trim());
+                System.out.println(row.getCell(i).getStringCellValue().trim());
                 if(row.getCell(i).getStringCellValue().trim().equalsIgnoreCase(colName))
                     colNum=i;
             }
@@ -285,7 +285,7 @@ public class Xls_Reader {
             hlink_font.setUnderline(XSSFFont.U_SINGLE);
             hlink_font.setColor(IndexedColors.BLUE.getIndex());
             hlink_style.setFont(hlink_font);
-            //hlink_style.setWrapText(true);
+            hlink_style.setWrapText(true);
 
           /* XSSFHyperlink link = createHelper.createHyperlink(XSSFHyperlink.LINK_FILE);
             link.setAddress(url);

@@ -53,6 +53,10 @@
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
         </dependency>
+        <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
