@@ -1,12 +1,14 @@
 package facebookMain;
 
-import commonAPI.CommonAPIChrome;
 
-public class BrowerLaunch extends CommonAPIChrome{
+import commonAPI.CommonAPI;
+
+
+public class BrowerLaunch extends CommonAPI{
 
     String url = "https://www.facebook.com";
 
     public void facebookBrowserLaunch() {
-        chromeDriver.get(url);
+        mChromeDriver.get(url);
     }
 }

@@ -120,21 +120,21 @@ public class CommonAPI {
 
     @BeforeMethod
     public void before(){
-        //windows Chrome
-        System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
-        wChromeDriver = new ChromeDriver();
-
-//        //windows Gecko
-        System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
-        wGeckoDriver = new FirefoxDriver();
-//
-//        //mac Chrome
+//        //windows Chrome
 //        System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
-//        cromeDriver= new ChromeDriver();
+//        wChromeDriver = new ChromeDriver();
+//
+////        //windows Gecko
+//        System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
+//        wGeckoDriver = new FirefoxDriver();
+////
+        //mac Chrome
+        System.setProperty("webdriver.chrome.driver", "/Users/shafiq/IdeaProjects/SeleniumHybridFrameworkTeam6/Generic/browser-driver/chromedriver");
+        mChromeDriver= new ChromeDriver();
 
 //        // mac Gecko
 //        System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
-//        wGeckoDriver = new FirefoxDriver();
+//        mGeckoDriver = new FirefoxDriver();
 
 
 
